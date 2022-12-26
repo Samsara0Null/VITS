@@ -1,0 +1,4 @@
+/content/data/wavs/dev/kne110_004.wav|/content/data/soft/dev/kne110_004.npy
+/content/data/wavs/dev/kne110_003.wav|/content/data/soft/dev/kne110_003.npy
+/content/data/wavs/dev/kne110_001.wav|/content/data/soft/dev/kne110_001.npy
+/content/data/wavs/dev/kne110_002.wav|/content/data/soft/dev/kne110_002.npy

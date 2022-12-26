@@ -1,0 +1,133 @@
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting Cython==0.29.21
+  Downloading Cython-0.29.21-cp37-cp37m-manylinux1_x86_64.whl (2.0 MB)
+Collecting librosa==0.8.0
+  Downloading librosa-0.8.0.tar.gz (183 kB)
+Collecting matplotlib==3.3.1
+  Downloading matplotlib-3.3.1-cp37-cp37m-manylinux1_x86_64.whl (11.6 MB)
+Collecting numpy==1.18.5
+  Downloading numpy-1.18.5-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Collecting phonemizer==2.2.1
+  Downloading phonemizer-2.2.1-py3-none-any.whl (49 kB)
+Collecting scipy==1.5.2
+  Downloading scipy-1.5.2-cp37-cp37m-manylinux1_x86_64.whl (25.9 MB)
+Collecting tensorboard==2.3.0
+  Downloading tensorboard-2.3.0-py3-none-any.whl (6.8 MB)
+Collecting torch==1.6.0
+  Downloading torch-1.6.0-cp37-cp37m-manylinux1_x86_64.whl (748.8 MB)
+Collecting torchvision==0.7.0
+  Downloading torchvision-0.7.0-cp37-cp37m-manylinux1_x86_64.whl (5.9 MB)
+Collecting Unidecode==1.1.1
+  Downloading Unidecode-1.1.1-py2.py3-none-any.whl (238 kB)
+Requirement already satisfied: audioread>=2.0.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (3.0.0)
+Requirement already satisfied: scikit-learn!=0.19.0,>=0.14.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (1.0.2)
+Requirement already satisfied: joblib>=0.14 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (1.1.0)
+Requirement already satisfied: decorator>=3.0.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (4.4.2)
+Requirement already satisfied: resampy>=0.2.2 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (0.4.0)
+Requirement already satisfied: numba>=0.43.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (0.56.0)
+Requirement already satisfied: soundfile>=0.9.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (0.10.3.post1)
+Requirement already satisfied: pooch>=1.0 in /usr/local/lib/python3.7/dist-packages (from librosa==0.8.0->-r requirements.txt (line 2)) (1.6.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (3.0.9)
+Requirement already satisfied: certifi>=2020.06.20 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (2022.6.15)
+Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (2.8.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (1.4.4)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (0.11.0)
+Requirement already satisfied: pillow>=6.2.0 in /usr/local/lib/python3.7/dist-packages (from matplotlib==3.3.1->-r requirements.txt (line 3)) (7.1.2)
+Collecting segments
+  Downloading segments-2.2.1-py2.py3-none-any.whl (15 kB)
+Requirement already satisfied: attrs>=18.1 in /usr/local/lib/python3.7/dist-packages (from phonemizer==2.2.1->-r requirements.txt (line 5)) (22.1.0)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.8.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (0.4.6)
+Requirement already satisfied: wheel>=0.26 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (0.37.1)
+Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.0.1)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (2.23.0)
+Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.15.0)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.47.0)
+Requirement already satisfied: google-auth<2,>=1.6.3 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.35.0)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (57.4.0)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (3.4.1)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (1.2.0)
+Requirement already satisfied: protobuf>=3.6.0 in /usr/local/lib/python3.7/dist-packages (from tensorboard==2.3.0->-r requirements.txt (line 7)) (3.17.3)
+Requirement already satisfied: future in /usr/local/lib/python3.7/dist-packages (from torch==1.6.0->-r requirements.txt (line 8)) (0.16.0)
+Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.7/dist-packages (from google-auth<2,>=1.6.3->tensorboard==2.3.0->-r requirements.txt (line 7)) (4.9)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /usr/local/lib/python3.7/dist-packages (from google-auth<2,>=1.6.3->tensorboard==2.3.0->-r requirements.txt (line 7)) (4.2.4)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.7/dist-packages (from google-auth<2,>=1.6.3->tensorboard==2.3.0->-r requirements.txt (line 7)) (0.2.8)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.7/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard==2.3.0->-r requirements.txt (line 7)) (1.3.1)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.7/dist-packages (from kiwisolver>=1.0.1->matplotlib==3.3.1->-r requirements.txt (line 3)) (4.1.1)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.7/dist-packages (from markdown>=2.6.8->tensorboard==2.3.0->-r requirements.txt (line 7)) (4.12.0)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard==2.3.0->-r requirements.txt (line 7)) (3.8.1)
+Requirement already satisfied: llvmlite<0.40,>=0.39.0dev0 in /usr/local/lib/python3.7/dist-packages (from numba>=0.43.0->librosa==0.8.0->-r requirements.txt (line 2)) (0.39.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.7/dist-packages (from pooch>=1.0->librosa==0.8.0->-r requirements.txt (line 2)) (21.3)
+Requirement already satisfied: appdirs>=1.3.0 in /usr/local/lib/python3.7/dist-packages (from pooch>=1.0->librosa==0.8.0->-r requirements.txt (line 2)) (1.4.4)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /usr/local/lib/python3.7/dist-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard==2.3.0->-r requirements.txt (line 7)) (0.4.8)
+Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests<3,>=2.21.0->tensorboard==2.3.0->-r requirements.txt (line 7)) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/dist-packages (from requests<3,>=2.21.0->tensorboard==2.3.0->-r requirements.txt (line 7)) (2.10)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests<3,>=2.21.0->tensorboard==2.3.0->-r requirements.txt (line 7)) (1.24.3)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.7/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard==2.3.0->-r requirements.txt (line 7)) (3.2.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn!=0.19.0,>=0.14.0->librosa==0.8.0->-r requirements.txt (line 2)) (3.1.0)
+Requirement already satisfied: cffi>=1.0 in /usr/local/lib/python3.7/dist-packages (from soundfile>=0.9.0->librosa==0.8.0->-r requirements.txt (line 2)) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi>=1.0->soundfile>=0.9.0->librosa==0.8.0->-r requirements.txt (line 2)) (2.21)
+Collecting clldutils>=1.7.3
+  Downloading clldutils-3.12.0-py2.py3-none-any.whl (197 kB)
+Requirement already satisfied: regex in /usr/local/lib/python3.7/dist-packages (from segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (2022.6.2)
+Collecting csvw>=1.5.6
+  Downloading csvw-3.1.1-py2.py3-none-any.whl (56 kB)
+Collecting colorlog
+  Downloading colorlog-6.6.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: tabulate>=0.7.7 in /usr/local/lib/python3.7/dist-packages (from clldutils>=1.7.3->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (0.8.10)
+Requirement already satisfied: babel in /usr/local/lib/python3.7/dist-packages (from csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (2.10.3)
+Collecting language-tags
+  Downloading language_tags-1.1.0-py2.py3-none-any.whl (210 kB)
+Collecting isodate
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+Collecting rdflib
+  Downloading rdflib-6.2.0-py3-none-any.whl (500 kB)
+Requirement already satisfied: jsonschema in /usr/local/lib/python3.7/dist-packages (from csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (4.3.3)
+Requirement already satisfied: uritemplate>=3.0.0 in /usr/local/lib/python3.7/dist-packages (from csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (3.0.1)
+Collecting rfc3986<2
+  Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)
+Collecting colorama
+  Downloading colorama-0.4.5-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: pytz>=2015.7 in /usr/local/lib/python3.7/dist-packages (from babel->csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (2022.2.1)
+Requirement already satisfied: importlib-resources>=1.4.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema->csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (5.9.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in /usr/local/lib/python3.7/dist-packages (from jsonschema->csvw>=1.5.6->segments->phonemizer==2.2.1->-r requirements.txt (line 5)) (0.18.1)
+Building wheels for collected packages: librosa
+  Building wheel for librosa (setup.py): started
+  Building wheel for librosa (setup.py): finished with status 'done'
+  Created wheel for librosa: filename=librosa-0.8.0-py3-none-any.whl size=201396 sha256=3ed424f268b0b83da9ff67cc4f6406fa892d3e420aa5e694e7fc4b70420d6ba0
+  Stored in directory: /root/.cache/pip/wheels/de/1e/aa/d91797ae7e1ce11853ee100bee9d1781ae9d750e7458c95afb
+Successfully built librosa
+Installing collected packages: isodate, rfc3986, rdflib, language-tags, colorama, numpy, csvw, colorlog, scipy, clldutils, torch, segments, Unidecode, torchvision, tensorboard, phonemizer, matplotlib, librosa, Cython
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.21.6
+    Uninstalling numpy-1.21.6:
+      Successfully uninstalled numpy-1.21.6
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.7.3
+    Uninstalling scipy-1.7.3:
+      Successfully uninstalled scipy-1.7.3
+  Attempting uninstall: torch
+    Found existing installation: torch 1.12.1+cu113
+    Uninstalling torch-1.12.1+cu113:
+      Successfully uninstalled torch-1.12.1+cu113
+  Attempting uninstall: torchvision
+    Found existing installation: torchvision 0.13.1+cu113
+    Uninstalling torchvision-0.13.1+cu113:
+      Successfully uninstalled torchvision-0.13.1+cu113
+  Attempting uninstall: tensorboard
+    Found existing installation: tensorboard 2.8.0
+    Uninstalling tensorboard-2.8.0:
+      Successfully uninstalled tensorboard-2.8.0
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.2.2
+    Uninstalling matplotlib-3.2.2:
+      Successfully uninstalled matplotlib-3.2.2
+  Attempting uninstall: librosa
+    Found existing installation: librosa 0.8.1
+    Uninstalling librosa-0.8.1:
+      Successfully uninstalled librosa-0.8.1
+  Attempting uninstall: Cython
+    Found existing installation: Cython 0.29.32
+    Uninstalling Cython-0.29.32:
+      Successfully uninstalled Cython-0.29.32
+Successfully installed Cython-0.29.21 Unidecode-1.1.1 clldutils-3.12.0 colorama-0.4.5 colorlog-6.6.0 csvw-3.1.1 isodate-0.6.1 language-tags-1.1.0 librosa-0.8.0 matplotlib-3.3.1 numpy-1.18.5 phonemizer-2.2.1 rdflib-6.2.0 rfc3986-1.5.0 scipy-1.5.2 segments-2.2.1 tensorboard-2.3.0 torch-1.6.0 torchvision-0.7.0
